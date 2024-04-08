@@ -41,9 +41,9 @@
             this.btnZero = new System.Windows.Forms.Button();
             this.btnEqual = new System.Windows.Forms.Button();
             this.btnDivide = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnMinus = new System.Windows.Forms.Button();
             this.btnPlus = new System.Windows.Forms.Button();
+            this.btnMinus = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.txtNumber = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -187,16 +187,18 @@
             this.btnDivide.TabIndex = 12;
             this.btnDivide.Text = "/";
             this.btnDivide.UseVisualStyleBackColor = true;
+            this.btnDivide.Click += new System.EventHandler(this.btnDivide_Click);
             // 
-            // btnAdd
+            // btnPlus
             // 
-            this.btnAdd.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnAdd.Location = new System.Drawing.Point(619, 223);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(113, 59);
-            this.btnAdd.TabIndex = 13;
-            this.btnAdd.Text = "*";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnPlus.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnPlus.Location = new System.Drawing.Point(619, 223);
+            this.btnPlus.Name = "btnPlus";
+            this.btnPlus.Size = new System.Drawing.Size(113, 59);
+            this.btnPlus.TabIndex = 13;
+            this.btnPlus.Text = "*";
+            this.btnPlus.UseVisualStyleBackColor = true;
+            this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
             // 
             // btnMinus
             // 
@@ -207,16 +209,18 @@
             this.btnMinus.TabIndex = 14;
             this.btnMinus.Text = "-";
             this.btnMinus.UseVisualStyleBackColor = true;
+            this.btnMinus.Click += new System.EventHandler(this.btnMinus_Click);
             // 
-            // btnPlus
+            // btnAdd
             // 
-            this.btnPlus.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnPlus.Location = new System.Drawing.Point(619, 369);
-            this.btnPlus.Name = "btnPlus";
-            this.btnPlus.Size = new System.Drawing.Size(113, 59);
-            this.btnPlus.TabIndex = 15;
-            this.btnPlus.Text = "+";
-            this.btnPlus.UseVisualStyleBackColor = true;
+            this.btnAdd.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnAdd.Location = new System.Drawing.Point(619, 369);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(113, 59);
+            this.btnAdd.TabIndex = 15;
+            this.btnAdd.Text = "+";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnClear
             // 
@@ -243,9 +247,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtNumber);
             this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.btnPlus);
-            this.Controls.Add(this.btnMinus);
             this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnMinus);
+            this.Controls.Add(this.btnPlus);
             this.Controls.Add(this.btnDivide);
             this.Controls.Add(this.btnEqual);
             this.Controls.Add(this.btnZero);
@@ -281,9 +285,9 @@
         private System.Windows.Forms.Button btnZero;
         private System.Windows.Forms.Button btnEqual;
         private System.Windows.Forms.Button btnDivide;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnMinus;
         private System.Windows.Forms.Button btnPlus;
+        private System.Windows.Forms.Button btnMinus;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.TextBox txtNumber;
     }
